@@ -29,7 +29,7 @@ pipeline {
         }
         stage('Build Mainframe Cobol Code') {
           steps {
-            sleep 20
+            sh 'gulp build'
           }
         }
         stage('Build iOS Apps') {
